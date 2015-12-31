@@ -1,0 +1,285 @@
+joe notes
+    ok from command prompt
+    ng from subprocess
+
+contents
+    j-=-= ok cmd prompt -> came up on the tablet  
+        0. the app finally came up on the tablet - it has 
+            - a little menu icon & 
+            - a side nav menu &
+            - it opens a browser to go to ngMaterial & the author's site            
+        1. needed to toggle settings-general-devOptsd-usbDebugging   AND 
+        2. be awake for another window to come up on the tablet
+        3. click OK on the tablet alert & 
+        4. re-run >cordova run android
+
+    j-=-= ng 2 runs - subprocess
+    
+j-=-= ok cmd prompt -> came up on the tablet    
+
+    Microsoft Windows [Version 10.0.10586]
+    (c) 2015 Microsoft Corporation. All rights reserved.
+
+    C:\Users\joeco>cd C:/1d/CrossPlatformPjs/CordovaPjs/angMatExeCmdsPj/angMatExeCmds
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>cordova build --stacktrace android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\build.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    Running: C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -Dorg.gradle.daemon=true
+    :preBuild
+    :compileDebugNdk
+    :preDebugBuild
+    :checkDebugManifest
+    :CordovaLib:compileLint
+    :CordovaLib:copyDebugLint UP-TO-DATE
+    :CordovaLib:mergeDebugProguardFiles
+    :CordovaLib:preBuild
+    :CordovaLib:preDebugBuild
+    :CordovaLib:checkDebugManifest
+    :CordovaLib:prepareDebugDependencies
+    :CordovaLib:compileDebugAidl
+    :CordovaLib:compileDebugRenderscript
+    :CordovaLib:generateDebugBuildConfig
+    :CordovaLib:generateDebugAssets UP-TO-DATE
+    :CordovaLib:mergeDebugAssets
+    :CordovaLib:generateDebugResValues
+    :CordovaLib:generateDebugResources
+    :CordovaLib:packageDebugResources
+    :CordovaLib:processDebugManifest
+    :CordovaLib:processDebugResources
+    :CordovaLib:generateDebugSources
+    :CordovaLib:compileDebugJava
+    Note: Some input files use or override a deprecated API.
+    Note: Recompile with -Xlint:deprecation for details.
+    :CordovaLib:processDebugJavaRes UP-TO-DATE
+    :CordovaLib:packageDebugJar
+    :CordovaLib:compileDebugNdk
+    :CordovaLib:packageDebugJniLibs UP-TO-DATE
+    :CordovaLib:packageDebugLocalJar UP-TO-DATE
+    :CordovaLib:packageDebugRenderscript UP-TO-DATE
+    :CordovaLib:bundleDebug
+    :prepareAndroidCordovaLibUnspecifiedDebugLibrary
+    :prepareDebugDependencies
+    :compileDebugAidl
+    :compileDebugRenderscript
+    :generateDebugBuildConfig
+    :generateDebugAssets UP-TO-DATE
+    :mergeDebugAssets
+    :generateDebugResValues
+    :generateDebugResources
+    :mergeDebugResources
+    :processDebugManifest
+    :processDebugResources
+    :generateDebugSources
+    :compileDebugJava
+    :preDexDebug
+    :dexDebug
+    :processDebugJavaRes UP-TO-DATE
+    :validateDebugSigning
+    :packageDebug
+    :zipalignDebug
+    :assembleDebug
+    :cdvBuildDebug
+
+    BUILD SUCCESSFUL
+
+    Total time: 30.563 secs
+    Built the following apk(s):
+        C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build\outputs\apk\android-debug.apk
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>cordova run ansroid
+    Error: Unknown platforms: ansroid
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>cordova run android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\run.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    WARNING : No target specified, deploying to emulator
+    WARNING : no emulator specified, defaulting to AVD_GalaxyNexus_ToolsForApacheCordova
+    Waiting for emulator...
+    Booting up emulator (this may take a while)..............
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\node_modules\q\q.js:126
+                        throw e;
+                              ^
+    Error executing "adb -s emulator-5554 shell getprop init.svc.bootanim": error: device 'emulator-5554' not found
+
+    ERROR running one or more of the platforms: Error: cmd: Command failed with exit code 1
+    You may not have the required environment or OS to run this project
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>cordova run android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\run.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    WARNING : No target specified, deploying to emulator
+    WARNING : no emulator specified, defaulting to AVD_GalaxyNexus_ToolsForApacheCordova
+    Waiting for emulator...
+    ^CTerminate batch job (Y/N)? n
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>cordova run android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\run.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    WARNING : No target specified, deploying to device '21a85583079e1671'.
+    Running: C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -PcdvBuildArch=arm -Dorg.gradle.daemon=true
+    :preBuild
+    :compileDebugNdk UP-TO-DATE
+    :preDebugBuild
+    :checkDebugManifest
+    :CordovaLib:compileLint
+    :CordovaLib:copyDebugLint UP-TO-DATE
+    :CordovaLib:mergeDebugProguardFiles UP-TO-DATE
+    :CordovaLib:preBuild
+    :CordovaLib:preDebugBuild
+    :CordovaLib:checkDebugManifest
+    :CordovaLib:prepareDebugDependencies
+    :CordovaLib:compileDebugAidl UP-TO-DATE
+    :CordovaLib:compileDebugRenderscript UP-TO-DATE
+    :CordovaLib:generateDebugBuildConfig UP-TO-DATE
+    :CordovaLib:generateDebugAssets UP-TO-DATE
+    :CordovaLib:mergeDebugAssets UP-TO-DATE
+    :CordovaLib:generateDebugResValues UP-TO-DATE
+    :CordovaLib:generateDebugResources UP-TO-DATE
+    :CordovaLib:packageDebugResources UP-TO-DATE
+    :CordovaLib:processDebugManifest UP-TO-DATE
+    :CordovaLib:processDebugResources UP-TO-DATE
+    :CordovaLib:generateDebugSources UP-TO-DATE
+    :CordovaLib:compileDebugJava UP-TO-DATE
+    :CordovaLib:processDebugJavaRes UP-TO-DATE
+    :CordovaLib:packageDebugJar UP-TO-DATE
+    :CordovaLib:compileDebugNdk UP-TO-DATE
+    :CordovaLib:packageDebugJniLibs UP-TO-DATE
+    :CordovaLib:packageDebugLocalJar UP-TO-DATE
+    :CordovaLib:packageDebugRenderscript UP-TO-DATE
+    :CordovaLib:bundleDebug UP-TO-DATE
+    :prepareAndroidCordovaLibUnspecifiedDebugLibrary UP-TO-DATE
+    :prepareDebugDependencies
+    :compileDebugAidl UP-TO-DATE
+    :compileDebugRenderscript UP-TO-DATE
+    :generateDebugBuildConfig UP-TO-DATE
+    :generateDebugAssets UP-TO-DATE
+    :mergeDebugAssets UP-TO-DATE
+    :generateDebugResValues UP-TO-DATE
+    :generateDebugResources UP-TO-DATE
+    :mergeDebugResources UP-TO-DATE
+    :processDebugManifest UP-TO-DATE
+    :processDebugResources UP-TO-DATE
+    :generateDebugSources UP-TO-DATE
+    :compileDebugJava UP-TO-DATE
+    :preDexDebug UP-TO-DATE
+    :dexDebug UP-TO-DATE
+    :processDebugJavaRes UP-TO-DATE
+    :validateDebugSigning
+    :packageDebug UP-TO-DATE
+    :zipalignDebug UP-TO-DATE
+    :assembleDebug UP-TO-DATE
+    :cdvBuildDebug UP-TO-DATE
+
+    BUILD SUCCESSFUL
+
+    Total time: 4.385 secs
+    Built the following apk(s):
+        C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build\outputs\apk\android-debug.apk
+    Using apk: C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build\outputs\apk\android-debug.apk
+    Installing app on device...
+    Launching application...
+    LAUNCH SUCCESS
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>rem needed to toggle settings-general-devOptsd-usbDebugging
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>rem AND be awake for another window to come up on the tablet
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds>rem click OK on the tablet alert & re-run >cordova run android
+
+j-=-= ng 2 runs - subprocess
+    cordova build android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\build.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    Running: C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -Dorg.gradle.daemon=true
+
+    FAILURE: Build failed with an exception.
+
+    * What went wrong:
+    A problem occurred configuring root project 'android'.
+    > Could not resolve all dependencies for configuration ':classpath'.
+       > Could not resolve com.android.tools.build:gradle:1.0.0+.
+         Required by:
+             :android:unspecified
+          > Failed to list versions for com.android.tools.build:gradle.
+             > Unable to load Maven meta-data from https://repo1.maven.org/maven2/com/android/tools/build/gradle/maven-metadata.xml.
+                > Could not GET 'https://repo1.maven.org/maven2/com/android/tools/build/gradle/maven-metadata.xml'.
+                   > The target server failed to respond
+
+    * Try:
+    Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+    BUILD FAILED
+
+    Total time: 8.005 secs
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\node_modules\q\q.js:126
+                        throw e;
+                              ^
+    Error code 1 for command: cmd with args: /s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -Dorg.gradle.daemon=true"
+    ERROR building one of the platforms: Error: cmd: Command failed with exit code 1
+    You may not have the required environment or OS to build this project
+    Error: cmd: Command failed with exit code 1
+    Exception in Tkinter callback
+    Traceback (most recent call last):
+      File "C:\Python27\lib\lib-tk\Tkinter.py", line 1536, in __call__
+        return self.func(*args)
+      File "C:\1bat\guiExecuteCommands\guiExecuteCommands.py", line 64, in click
+        self.execute_cmd(rnum)
+      File "C:\1bat\guiExecuteCommands\guiExecuteCommands.py", line 57, in execute_cmd
+        outstr = subprocess.check_call(commandstring, cwd=cwdpath, shell=True)  #  Convenience Function
+      File "C:\Python27\lib\subprocess.py", line 540, in check_call
+        raise CalledProcessError(retcode, cmd)
+    CalledProcessError: Command 'cordova build android' returned non-zero exit status 1
+    
+    
+    
+    cordova build --stacktrace android
+    Running command: cmd "/s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\build.bat""
+    ANDROID_HOME=C:\Program Files (x86)\Android\android-sdk
+    JAVA_HOME=C:\Program Files\Java\jdk1.8.0_65
+    Running: C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -Dorg.gradle.daemon=true
+
+    FAILURE: Build failed with an exception.
+
+    * What went wrong:
+    A problem occurred configuring root project 'android'.
+    > Could not resolve all dependencies for configuration ':classpath'.
+       > Could not resolve com.android.tools.build:gradle:1.0.0+.
+         Required by:
+             :android:unspecified
+          > Failed to list versions for com.android.tools.build:gradle.
+             > Unable to load Maven meta-data from https://repo1.maven.org/maven2/com/android/tools/build/gradle/maven-metadata.xml.
+                > Could not GET 'https://repo1.maven.org/maven2/com/android/tools/build/gradle/maven-metadata.xml'.
+                   > The target server failed to respond
+
+    * Try:
+    Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+    BUILD FAILED
+
+    Total time: 1.601 secs
+
+    C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\cordova\node_modules\q\q.js:126
+                        throw e;
+                              ^
+    Error code 1 for command: cmd with args: /s /c "C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\gradlew cdvBuildDebug -b C:\1d\CrossPlatformPjs\CordovaPjs\angMatExeCmdsPj\angMatExeCmds\platforms\android\build.gradle -Dorg.gradle.daemon=true"
+    ERROR building one of the platforms: Error: cmd: Command failed with exit code 1
+    You may not have the required environment or OS to build this project
+    Error: cmd: Command failed with exit code 1
+    Exception in Tkinter callback
+    Traceback (most recent call last):
+      File "C:\Python27\lib\lib-tk\Tkinter.py", line 1536, in __call__
+        return self.func(*args)
+      File "C:\1bat\guiExecuteCommands\guiExecuteCommands.py", line 64, in click
+        self.execute_cmd(rnum)
+      File "C:\1bat\guiExecuteCommands\guiExecuteCommands.py", line 57, in execute_cmd
+        outstr = subprocess.check_call(commandstring, cwd=cwdpath, shell=True)  #  Convenience Function
+      File "C:\Python27\lib\subprocess.py", line 540, in check_call
+        raise CalledProcessError(retcode, cmd)
+    CalledProcessError: Command 'cordova build --stacktrace android' returned non-zero exit status 1
