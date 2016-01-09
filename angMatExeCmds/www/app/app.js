@@ -6,7 +6,8 @@ angular.module("ngapp", [ /*"ngTouch",*/ "ui.router", "ngMdIcons", "ngMaterial",
   document.addEventListener("deviceready", function () {
     $cordovaStatusbar.overlaysWebView(false);
     $cordovaStatusbar.styleHex('#E53935');
-    window.plugins.orientationLock.lock("portrait");
+    //window.plugins.orientationLock.lock("portrait");
+    window.plugins.orientationLock.lock("landscape");
   }, false);
   /*document.addEventListener("backbutton", function (e) {
       if($state.is('init')){
@@ -19,6 +20,8 @@ angular.module("ngapp", [ /*"ngTouch",*/ "ui.router", "ngMdIcons", "ngMaterial",
 
 .config(function($mdThemingProvider) {
   $mdThemingProvider.theme('default')
-    .primaryPalette('red')
-    .accentPalette('blue');
+    //.primaryPalette('red')
+    //.accentPalette('blue');
+    .primaryPalette('green')
+    .accentPalette('yellow');
 });

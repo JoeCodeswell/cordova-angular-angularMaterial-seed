@@ -1,14 +1,17 @@
 <md-toolbar flex>
-  <div class="md-toolbar-tools" layout="row" layout-align="space-between center">
+  <div class="md-toolbar-tools" layout="row" layout-align="space-between center">    
+    <div style="width: 40px; height: 40px;"></div>
+    <p>{{ main.title }}</p>
+    <!-- http://www.bossable.com/1338/angular-material-design-toolbar-examples/ -->
     <md-button class="md-icon-button md-primary" aria-label="Menu" ng-click="main.toggle()">
       <ng-md-icon icon="menu"></ng-md-icon>
     </md-button>
-    <p>{{ main.title }}</p>
-    <div style="width: 40px; height: 40px;"></div>
   </div>
 </md-toolbar>
 
-<md-sidenav class="md-sidenav-left" md-component-id="left">
+<!-- both of these "work" just NOT simultaneously -->
+<!--<md-sidenav class="md-sidenav-left" md-component-id="thesidenav">-->
+<md-sidenav class="md-sidenav-right" md-component-id="thesidenav">
   <md-toolbar>
     <h1 class="md-toolbar-tools">SideNav Menu</h1>
   </md-toolbar>
@@ -28,10 +31,14 @@
   <md-whiteframe class="md-whiteframe-3dp" layout="column" style="margin: 1em; width: 22em; height: 15em;" flex>
     <div layout="column" flex style="margin-left: 1em;">
       <h4>Project:</h4>
-      <p style="margin-top: -1em;">Cordova-Angular-AngularMaterial-Seed</p>
+      <p style="margin-top: -1em;">Execute Commands - Ang Mat</p>
       <h4>Created by:</h4>
-      <p style="margin-top: -1em;">MarioAleo</p>
+      <p style="margin-top: -1em;">Joe Dorocak aka Joe Codeswell from</p>
+      <h4>Based on:</h4>
+      <p style="margin-top: -1em;"><a href="https://github.com/mario-aleo/cordova-angular-angularMaterial-seed">GitHub Repo: cordova-angular-angularMaterial-seed</a></p>
+      <p style="margin-top: -1em;">By Mario Aleo</p>
     </div>
+    <!--
     <md-divider></md-divider>
     <div layout="row" layout-align="space-around center" flex="20">
       <md-button class="md-icon-button" aria-label="Project" ng-href="https://github.com/mario-aleo/cordova-angular-angularMaterial-seed">
@@ -41,5 +48,6 @@
         <ng-md-icon icon="favorite"></ng-md-icon>
       </md-button>
     </div>
+    -->
   </md-whiteframe>
 </div>

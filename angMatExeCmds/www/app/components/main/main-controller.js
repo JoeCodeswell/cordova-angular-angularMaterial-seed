@@ -10,7 +10,7 @@ angular.module("ngapp").controller("MainController", function(shared, $state, $s
 
     this.title = $state.current.title;
 
-
+    /*
     this.isOpen = function() { return false };
     $mdComponentRegistry
     .when("left")
@@ -24,10 +24,33 @@ angular.module("ngapp").controller("MainController", function(shared, $state, $s
         .then(function(){
         });
     };
-
+    // i don't understand this
     this.close = function() {
     $mdSidenav("right").close()
         .then(function(){
         });
     };
+    */
+    // joe renames id from left to thesidenav
+    this.isOpen = function() { return false };
+    $mdComponentRegistry
+    .when("thesidenav")
+    .then( function(sideNav){
+      ctrl.isOpen = angular.bind( sideNav, sideNav.isOpen );
+      ctrl.toggle = angular.bind( sideNav, sideNav.toggle );
+    });
+
+    this.toggleRight = function() {
+    $mdSidenav("thesidenav").toggle()
+        .then(function(){
+        });
+    };
+    
+    // i don't understand this
+    this.close = function() {
+    $mdSidenav("thesidenav").close()
+        .then(function(){
+        });
+    };
+
 });

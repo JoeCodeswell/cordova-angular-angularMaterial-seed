@@ -5,6 +5,10 @@
         A Cordova-AngularMaterial implementation of my 
             Python-TKInter guiExecuteCommands.py program documented here:
                 https://joecodeswell.wordpress.com/2015/12/28/execute-shell-commands-from-a-python-gui-app/
+        
+        The GREAT seed for this app came from Mario Aleo: 
+            https://github.com/mario-aleo/cordova-angular-angularMaterial-seed
+            
     </description>
     <author email="joecodeswell@gmail.com" href="https://joecodeswell.com">
         Joe Dorocak aka Joe Codeswell
