@@ -1,5 +1,5 @@
-<h1># cordova-angular-angularMaterial-seed</h1>
-
+<h1>Added view to: </h1>
+<h2>cordova-angular-angularMaterial-seed</h2>
 <p>A seed to start a project using Cordova + AngularJS + Angular-Material</p>
 <p>(Note: this isn't an Ionic Framework Seed)</p>
 
